@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aurora</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Funcionalidades -->
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-brown-800">☕ Café Aurora</h1>
+      <nav class="space-x-4 text-sm font-medium">
+        <a href="#menu" class="hover:text-brown-600">Menú</a>
+        <a href="#sobre" class="hover:text-brown-600">Nosotros</a>
+        <a href="#opiniones" class="hover:text-brown-600">Opiniones</a>
+        <a href="#contacto" class="hover:text-brown-600">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center h-[80vh] flex items-center justify-center text-white text-center">
+    <div class="bg-black bg-opacity-50 p-6 rounded">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Despierta tus mañanas</h2>
+      <p class="text-lg mb-6">Café artesanal, ambiente acogedor y momentos inolvidables.</p>
+      <a href="#menu" class="bg-brown-600 hover:bg-brown-700 text-white px-6 py-2 rounded">Ver menú</a>
+    </div>
+  </section>
+
+  <!-- Menú destacado -->
+  <section id="menu" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">Nuestro Menú</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-100 p-4 rounded shadow-sm">
+          <h4 class="font-semibold">Café Latte</h4>
+          <p>Espresso suave con leche cremosa.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow-sm">
+          <h4 class="font-semibold">Tostadas Integrales</h4>
+          <p>Con aguacate, tomate y aceite de oliva.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded shadow-sm">
+          <h4 class="font-semibold">Capuccino</h4>
+          <p>Perfecto equilibrio entre café y espuma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre nosotros -->
+  <section id="sobre" class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">Sobre Nosotros</h3>
+      <p>Café Aurora nació con la idea de crear un lugar donde el café y la compañía se disfrutan sin prisas. Nuestro café es 100% natural, preparado con amor y servido con calidez.</p>
+    </div>
+  </section>
+
+  <!-- Opiniones -->
+  <section id="opiniones" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8">Lo que dicen nuestros clientes</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <blockquote class="bg-gray-100 p-4 rounded shadow-sm italic">“El mejor café de Girona. Y el ambiente es inmejorable.” – Laura G.</blockquote>
+        <blockquote class="bg-gray-100 p-4 rounded shadow-sm italic">“Un lugar perfecto para trabajar o charlar. Me encanta.” – Marc R.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Contáctanos</h3>
+      <form class="grid gap-4 text-left max-w-md mx-auto">
+        <input type="text" placeholder="Tu nombre" class="w-full border border-gray-300 rounded p-2" />
+        <input type="email" placeholder="Tu correo" class="w-full border border-gray-300 rounded p-2" />
+        <textarea placeholder="Tu mensaje" class="w-full border border-gray-300 rounded p-2"></textarea>
+        <button type="submit" class="bg-brown-600 hover:bg-brown-700 text-white px-4 py-2 rounded">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Café Aurora · Girona</p>
+    <p class="text-sm">Síguenos en Instagram · Facebook · TikTok</p>
+  </footer>
+
+</body>
+</html>
